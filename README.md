@@ -4,11 +4,11 @@
 
 ## Installation
 
-`npm install @buxlabs/amd-to-es6`
+`npm install @isdenmois/amd-to-es6`
 
 If you'd like to use it in the cli consider installing globally or use `npx`
 
-`npm install -g @buxlabs/amd-to-es6`
+`npm install -g @isdenmois/amd-to-es6`
 
 ## Usage
 
@@ -35,7 +35,7 @@ Convert multiple files and replace them with:
 Convert a single file with:
 
 ```javascript
-const amdtoes6 = require('@buxlabs/amd-to-es6');
+const amdtoes6 = require('@isdenmois/amd-to-es6');
 const source = 'define({ hello: 'world' });';
 const result = amdtoes6(source); // export default { hello: 'world' };
 ```

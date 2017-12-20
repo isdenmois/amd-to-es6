@@ -1,3 +1,6 @@
+## 0.11.2
+- fork for add enum parsing
+
 ## 0.11.1
 
 - fix: handle multiple exports.foo assignments

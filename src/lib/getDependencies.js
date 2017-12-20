@@ -1,5 +1,6 @@
 'use strict'
 
+const escodegen = require('escodegen')
 const isDefineWithArrayAndCallback = require('./isDefineWithArrayAndCallback')
 
 function getArrayExpressionValues (node) {
@@ -7,7 +8,7 @@ function getArrayExpressionValues (node) {
 }
 
 function getFunctionParameters (node) {
-  return node.params.map(param => param.name)
+  return node.params.map(param => escodegen.generate(param))
 }
 
 module.exports = function (node) {

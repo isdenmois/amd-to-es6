@@ -335,3 +335,7 @@ test.skip('it should handle multiple exports assignments', assert => {
 test.skip('it should handle exports with same names', assert => {
   assert.truthy(convert('define/exports-same'))
 })
+
+test('it should destruct', assert => {
+  assert.truthy(convert('enum'))
+})
